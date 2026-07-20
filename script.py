@@ -287,5 +287,6 @@ for pdf in pdfs:
         print(f"Failed to process {pdf}")
         print(f"Error: {e}")
 
+        # Close the database connection if it was opened
 
         continue
