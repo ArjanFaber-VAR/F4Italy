@@ -6,7 +6,7 @@ import pdfplumber
 import os
 from urllib.parse import urlparse
 
-years = ['2022', '2023', '2024', '2025', '2026']
+years = ['2026']
 pdfs = []
 for y in years: 
     url = "https://www.acisport.it/it/F4/calendario-e-risultati/"+y
