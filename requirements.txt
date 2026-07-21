@@ -6,3 +6,5 @@ pandas
 numpy
 playwright
 psycopg2-binary
+cloudscraper
+
