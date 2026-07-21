@@ -22,7 +22,7 @@ for y in years:
         "q=0.9,image/avif,image/webp,*/*;q=0.8"
     ),
     "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Referer": "https://www.google.com/",
+    "Referer": "https://www.acisport.it/",
 }
 
     response = requests.get(url,headers=headers)
