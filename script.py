@@ -25,7 +25,7 @@ for y in years:
     "Referer": "https://www.google.com/",
 }
 
-    response = session.get(url,headers=headers)
+    response = requests.get(url,headers=headers)
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "html.parser")
