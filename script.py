@@ -11,7 +11,7 @@ pdfs = []
 for y in years: 
     url = "https://www.acisport.it/it/F4/calendario-e-risultati/"+y
 
-    session.headers.update({
+    headers = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -23,9 +23,9 @@ for y in years:
     ),
     "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
     "Referer": "https://www.google.com/",
-})
+}
 
-    response = session.get(url)
+    response = session.get(url,headers=headers)
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "html.parser")
